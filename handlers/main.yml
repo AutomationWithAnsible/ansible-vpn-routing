@@ -2,4 +2,4 @@
 
 - name: Save iptables
   command: iptables-save
-  sudo: true
+  become: true
