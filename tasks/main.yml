@@ -19,7 +19,7 @@
   command: iptables -t nat -L
   register: iptablesrules
   changed_when: no
-  sudo: true
+  become: true
 
 - name: Setup the rule if not present
   shell: >
